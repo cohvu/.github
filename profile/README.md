@@ -1,13 +1,78 @@
 # Cohvu
 
-Persistent, shared knowledge for AI agents.
+**This is what AI-native development was always supposed to feel like.**
 
-Cohvu gives your AI agents a shared knowledge graph that persists across sessions and agents. Agents read, contribute, challenge, and refine knowledge automatically — no dashboards, no manual entry. The agent is the interface.
+Every agent you run already knows your project — your decisions, your direction, your reasoning. Switch agents mid-thought and the new one picks up exactly where the last left off. No reexplaining. No rebuilding. It just gets you. Open a session tomorrow and it remembers everything from today. That alone changes everything. But every agent on your team understands your project just as deeply too — and yours understands theirs. Every agent, every person, working from the same living understanding of what you're building and why. This is what it's supposed to feel like.
 
-## Setup
+Every agent you run starts from zero. No memory of your decisions. No understanding of your project. No idea what you built yesterday or why. You rebuild that understanding every single session, over and over. And every agent on your team is doing the same thing — all working on the same project, none of them knowing anything.
 
-Add to your agent's MCP config:
+All of your agents now continue to understand you — your project, your decisions, your direction — across every agent and every session, forever. No more agents that don't understand you, your direction, your decisions, what you built yesterday, or why. Invite your team and their agents understand everything too.
 
+---
+
+## Get started
+```
+npx cohvu login
+```
+
+Sign in with Google. Cohvu configures every AI tool on your machine automatically. Your agents are ready from their next conversation.
+
+7 day free trial, no card required — $9/seat/month after.
+
+---
+
+## How it works
+
+Cohvu gives your agents two tools: `read` and `contribute`.
+
+Before starting work the agent reads from your project memory. It gets everything that matters — your decisions, your direction, your reasoning — before it does anything. As it works it contributes what it learns. Understanding builds automatically across every agent, every session, every person on your team.
+
+The agent never thinks about any of this. It just reads and contributes. Everything else is invisible.
+
+---
+
+## The elegance
+
+Most memory systems ask you to think about memory. What to save. How to tag it. Where to put it. What to retrieve. Cohvu doesn't. Your agent reads and contributes in plain language and the right thing happens every time. Memories stay clean without anyone maintaining them. The right context surfaces without anyone curating it. Understanding deepens without anyone managing it. The more you use it the better it gets — and you never once think about how.
+
+That's the whole idea. The most powerful thing about Cohvu is what you never have to do.
+
+---
+
+## For you
+
+Every agent you run understands your project from the first message. Your decisions. Your direction. Your reasoning. Everything you've ever built, decided, or discovered — carried forward automatically. Start a new session and your agent already knows where you left off. Switch to a different agent and it knows everything the last one did. Your understanding never dies with the context window.
+
+---
+
+## For your team
+
+Share a project with your team and every agent across your entire team works from the same understanding. Your teammate's agent knows what yours knows. When someone on your team figures something out every agent benefits. When a decision gets made every agent carries it forward. The entire team's collective understanding compounds in one place, automatically, forever.
+
+Share a project with one link. Run `npx cohvu invite` to get yours.
+
+---
+
+## Works with every AI coding agent
+
+Cohvu configures automatically on login:
+
+- Claude Code
+- Cursor
+- Windsurf
+- Cline
+- Codex
+- Claude Desktop
+- VS Code Copilot
+- Copilot CLI
+- Copilot JetBrains
+- Junie
+
+---
+
+## Manual MCP configuration
+
+If you want to configure Cohvu manually for any platform, use this:
 ```json
 {
   "mcpServers": {
@@ -19,45 +84,48 @@ Add to your agent's MCP config:
 }
 ```
 
-On first connection, a browser window opens for Google sign-in. After that, it's automatic.
+Run `npx cohvu login` first to authenticate.
 
-Then ask your agent:
-
-> Create a root scope called "My Team"
-
-It returns a Stripe checkout link. Complete payment ($9/seat/month), and your scope is live. Your agent starts contributing immediately.
-
-## How it works
-
-**Your agent is the interface.** There's no dashboard. You talk to your agent, and it manages everything through Cohvu's MCP tools.
-
-- **Canon** — The team's source of truth. Agents establish, update, challenge, and refine it over time. Truth converges naturally.
-- **Records** — Observations and decisions captured as they happen. Immutable, linked by causality.
-- **Tensions** — Contradictions between beliefs. Agents flag them, future sessions resolve them.
-- **Divergences** — Gaps between what's documented and what's real. Agents report them when they notice.
-- **Mesh** — A relationship graph connecting all knowledge. Agents wire it together so future sessions can reason across it.
-- **Scopes** — Organize knowledge into a tree. Modules, features, domains — whatever fits.
-
-## Invite people
-
-Ask your agent:
-
-> What's my people link?
-
-Share the link. They sign in with Google and join your scope. Their agents see the same knowledge. $9/seat/month, added automatically.
+---
 
 ## Autonomous agents
 
-For agents that can't open a browser (CI pipelines, background workers, cron jobs):
+Every project member gets an agent link. Autonomous agents — CI bots, scheduled tasks, headless workflows — connect using that link without any user auth. Run `npx cohvu invite` to get yours.
 
-> What's my agent link?
+---
 
-Configure the agent with the link as its MCP server URL. No auth needed. Agents don't count as seats.
+## CLI
 
-## Pricing
+`npx cohvu login` — Sign in and configure every AI tool automatically.
 
-$9/seat/month. No free tier. No tiers at all. Every seat gets everything. Cancel anytime.
+`npx cohvu create` — Create a new project.
 
-## Why
+`npx cohvu invite` — Invite teammates and get your agent link for autonomous agents.
 
-AI agents accumulate context every session — then lose it. Cohvu is where that context lives permanently. Agents build on each other's work instead of starting from scratch. The knowledge graph converges toward accuracy because every agent can challenge, support, and refine what came before.
+`npx cohvu members` — Manage your team.
+
+`npx cohvu billing` — Manage your subscription.
+
+`npx cohvu switch` — Switch between projects.
+
+`npx cohvu clear` — Clear all memories from a project.
+
+`npx cohvu delete` — Delete a project.
+
+---
+
+## Billing
+
+7 day free trial, no card required. One trial per person. $9/seat/month after.
+
+When a teammate joins your seat count updates automatically. When someone leaves it adjusts. You never think about it.
+
+---
+
+## Support
+
+support@cohvu.com
+
+---
+
+*© 2026 Cohvu*
