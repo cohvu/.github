@@ -122,6 +122,11 @@ When a teammate joins your seat count updates automatically. When someone leaves
 
 ---
 
+Security
+Your agent never talks to the internet directly. Cohvu runs as a local proxy — your agent communicates with it locally, it forwards to the Cohvu backend over HTTPS. All data is isolated per project with multiple layers of access verification. Tokens are short-lived and refresh automatically. API keys are hashed and never stored in plaintext. No stack traces or internal errors are ever exposed.
+
+---
+
 ## Support
 
 support@cohvu.com
